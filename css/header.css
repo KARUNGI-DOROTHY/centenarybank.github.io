@@ -1,0 +1,151 @@
+#header nav {
+  position: relative;
+  background: hsl(0, 0%, 100%);
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+#header img {
+  width: 230px;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#header #btnhamburger span {
+  display: block;
+  background-color: hsl(214, 84%, 64%);
+  height: 3px;
+  width: 25px;
+  transition: all 300ms;
+  margin-right: 20px;
+}
+#header #btnhamburger span:not(:last-child) {
+  margin-bottom: 5px;
+}
+#header #btnhamburger.active span:first-child {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+#header #btnhamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+#header #btnhamburger.active span:last-child {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+#header #overlay.active {
+  animation: fade-in 300ms ease-in-out forwards;
+}
+#header #mobile.active {
+  opacity: 1;
+}
+#header #mobile {
+  background: hsl(0, 0%, 100%);
+  position: absolute;
+  margin-top: 24px;
+  left: 50%;
+  transform: translate(-50%);
+  width: calc(100% - 3rem);
+  padding: 26px;
+  border-radius: 5px;
+  z-index: 200;
+  opacity: 0;
+}
+#header #mobile a {
+  display: block;
+  color: hsl(233, 26%, 24%);
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  transition: all 155ms ease-in-out;
+}
+#header #mobile a:hover {
+  background: hsl(233, 8%, 62%);
+  border-radius: 5px;
+  transform: translateX(10px);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+.header__links a {
+  position: relative;
+  font-size: 14px;
+  color: hsl(233, 8%, 62%);
+  transition: color 300ms ease-in-out;
+}
+.header__links a:not(:last-child) {
+  margin-right: 32px;
+}
+.header__links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 4px;
+  background: linear-gradient(to right, hsl(241, 76%, 46%), hsl(231, 77%, 45%));
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms linear;
+}
+.header__links a:hover {
+  color: hsl(233, 26%, 24%);
+}
+.header__links a:hover::before {
+  opacity: 1;
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.header__btn {
+  padding: 14px 35px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, hsl(226, 89%, 41%), hsl(224, 93%, 46%));
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  transition: opacity 300ms ease-in-out;
+}
+.header__btn:hover {
+  opacity: 0.7;
+  background: linear-gradient(to left, hsl(0, 79%, 41%), hsl(0, 79%, 49%));
+}
+.header__btn a {
+  color: hsl(0, 0%, 100%);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(hsl(233, 26%, 24%), transparent);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+

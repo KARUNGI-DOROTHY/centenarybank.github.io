@@ -1,0 +1,28 @@
+.content {
+  font-family: sans-serif;
+  background: hsl(220, 16%, 96%);
+  padding: 40px;
+}
+@media (max-width: 639px) {
+  .content {
+    padding: 5px;
+  }
+}
+.content__text {
+  padding: 24px;
+  background: hsl(0, 0%, 98%);
+  width: 100%;
+}
+.content h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: hsl(136, 65%, 51%);
+}
+.content h3 {
+  font-size: 20px;
+  font-weight: 300;
+  color: hsl(233, 26%, 24%);
+}
+.content p {
+  font-size: 14px;
+}

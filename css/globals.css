@@ -1,0 +1,91 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  line-height: 1.3;
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: hsl(233, 8%, 62%);
+  overflow-x: hidden;
+}
+body.noscroll {
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+.container {
+  max-width: 1113px;
+  margin: 0 auto;
+}
+.container--pall {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+@media (min-width: 1024px) {
+  .container--pall {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+.container--py {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+@media (min-width: 1024px) {
+  .container--py {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+.container--px {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.container--pt {
+  padding-top: 70px;
+}
+@media (min-width: 1024px) {
+  .container--pt {
+    padding-top: 96px;
+  }
+}
+.container--pr {
+  padding-right: 24px;
+}
+.container--pb {
+  padding-bottom: 70px;
+}
+@media (min-width: 1024px) {
+  .container--pb {
+    padding-bottom: 96px;
+  }
+}
+.container--p {
+  padding-left: 24px;
+}
+
+@media (max-width: 1023px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}

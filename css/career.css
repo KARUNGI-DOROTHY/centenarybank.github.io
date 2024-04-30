@@ -1,0 +1,135 @@
+.about {
+  position: relative;
+  width: 100%;
+  height: 410px;
+}
+.about img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.about hide-for-mobile{
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+.about__box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 750px;
+  height: 400px;
+  padding: 40px;
+  background: rgb(248, 248, 252);
+}
+.about__txt h1 {
+  font-family: sans-serif;
+  font-size: 40px;
+  color: hsl(253, 84%, 43%);
+  font-weight: 400;
+  margin-top: 80px;
+}
+
+.work {
+  font-family: sans-serif;
+  text-align: center;
+  background: hsl(225, 40%, 98%);
+  padding: 40px;
+}
+.work__text h2 {
+  font-size: 40px;
+  color: hsl(251, 85%, 38%);
+  font-weight: 400;
+}
+.work__text p {
+  font-size: 14px;
+  color: rgb(53, 53, 65);
+}
+.work button {
+  padding: 15px 50px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid hsl(233, 26%, 24%);
+  color: hsl(233, 26%, 24%);
+  cursor: pointer;
+  opacity: 0.99;
+  margin-bottom: px;
+  transition: transform 300ms ease-in-out;
+}
+.work button:hover {
+  transform: scale(1.05);
+}
+
+.network {
+  font-family: sans-serif;
+  text-align: center;
+  background: hsl(220, 16%, 96%);
+  padding: 40px;
+}
+.network__text h2 {
+  font-size: 40px;
+  color: hsl(251, 80%, 52%);
+  font-weight: 400;
+}
+.network__text p {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+.network button {
+  padding: 15px 50px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid hsl(233, 26%, 24%);
+  color: hsl(240, 33%, 98%);
+  cursor: pointer;
+  opacity: 0.99;
+  margin-bottom: px;
+  transition: transform 300ms ease-in-out;
+  background-color: blue;
+}
+.network button:hover {
+  transform: scale(1.05);
+  background-color: rgb(221, 12, 40);
+  color:aliceblue;
+  
+}
+
+.program {
+  font-family: sans-serif;
+  background: hsl(233, 88%, 38%);
+  padding: 40px;
+}
+.program__uper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.program__uper h2 {
+  font-size: 40px;
+  color: hsl(140, 23%, 95%);
+  font-weight: 400;
+}
+.program__uper p {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+.program__lower {
+  text-align: center;
+}
+
+.program__lower button {
+  padding: 15px 50px;
+  border-radius: 5px;
+  background: hsl(233, 26%, 24%);
+  border: 1px solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  opacity: 0.99;
+  margin-bottom: px;
+  transition: transform 300ms ease-in-out;
+}
+.program__lower button:hover {
+  transform: scale(1.05);
+  background-color: red;
+  color: aliceblue;
+}

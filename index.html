@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="HTML CSS JAVASCRIPT">
+  <meta name="author" content="dorothy">
+  <link rel="icon" type="image/png" sizes="500x500" href="images2/logo2.jpeg">
+  <title>| CENTENARY BANK</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/globals.css">
+  <link rel="stylesheet" href="css/variables.css">
+
+  <link rel="stylesheet" href="css/features.css">
+  <link rel="stylesheet" href="css/article.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+ 
+</head>
+<style>
+   .drop {
+    display: none;
+    
+ }
+
+ .header_links ul li:hover .drop{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 33px;
+    background: hsl(0, 6%, 93%);
+ }
+
+ .header_links ul li:hover .drop ul{
+    display: block;
+    margin: 10px;
+ }
+
+ .header_links ul li:hover .drop ul li {
+    width: 200px;
+    padding: 10px;
+ }
+ .header_links ul li:hover .drop ul li a {
+    padding: 10px 20px;
+ }
+</style>
+<body>
+<header id="header" class="header open">
+  <div id="overlay"></div>
+<nav class=" container--pall flex">
+  <a href="/" class="header__logo">
+    <img src="images2/logo.jpeg" width="100px" height="100px">
+  </a>
+  <a id="btnhamburger" href="#" class="header__menu   hide-for-desktop">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+
+  <div class="header__links hide-for-mobile">
+    <a href="index.html">Home</a>
+    <a href="about us.html">About us</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a> 
+    <a href="career.html">Careers</a>
+    <a href="potifolio.html">Potifolio</a>
+  </div>
+    <button type="button" class="hide-for-mobile header__btn"><a href="#">Cente online</a></button>
+</nav>
+<div id="mobile">
+  <a href="index.html">Home</a>
+  <a href="about us.html">About Us</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="career.html">Career</a>
+  <a href="potifolio.html">Potifolio</a>
+</div>
+</header>
+
+
+<!-- slider starts ----------------------------------- -->
+
+
+<style>
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24%;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.8s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  </style>
+  </head>
+  
+  <body>
+      
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <img src="images2/cl2.jpeg" style="width:100%; height: 500PX;">
+    <div class="text" style="color: red; font-size: 40px; font-family: Algerian; "> <b>WELCOME TO CENTENARY BANK</b></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="images2/cl3.jpeg" style="width:100%; height: 500PX;">
+    <div class="text" style="color: red; font-size: 40px; font-family: Algerian; "><b>The Salary Loan Repayement is Back!</b></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="images/money_trans1.PNG" style="width:100%; height: 500PX;">
+    <div class="text" style="color: red; font-size: 40px; font-family: Algerian; "><b>Take your CENTENARY bank card wherever you go</b></div>
+  </div>
+  
+  
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+  <script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+  
+  <!-- slider ends -------------------------------------------------   -->
+  
+  
+<section class="about-us">
+  <div class="container">
+      <div class="about-us__upper">
+          <h2>About CENTENARY BANK</h2>
+          <p>We are Uganda’s leading Commercial Microfinance Bank serving over 2.5 million customers, with an asset base of UGX 6.3 trillion. Financial inclusion is key for us and we are reaching out through 80 branches, 207 ATMs, over 7,400 Agents, and several other digital channels including CenteMobile banking, CenteOnline banking, CenteVisa debit & prepaid cards, and Mastercard Platinum debit card.</p>
+     </div>
+     <div class="about-us__lower">
+        <div class="mission">
+           <h3>Our Mission</h3>
+           <p>To transform lives through inclusive and innovative financial solutions especially in rural areas sustainably.” .</p>
+        </div>
+        <div class="vision">
+           <h3>Our Vision</h3>
+           <p>To be the preferred provider of innovative financial solutions, especially microfinance.</p>
+        </div>
+        <div class="purpose">
+           <h3>Our Purpose</h3>
+           <p>Our success as a bank is derived from our ability to always listen, understand and respond to our customer needs. We are, therefore, a diversified bank that offers a wide range of financial products and services, including consumer and business banking, corporate and SME banking through 80 branches, 205 ATMs and over 5800 agents country wide as well as various electronic channels. </p>
+        </div>
+     </div>
+  </div>
+</section>
+<section class="hero">
+  <div class="container">
+    <div class="hero__image hide-for-desktop"></div>
+    <div class="hero__text">
+      <h1>Next generation digital banking</h1>
+      <p>  Take your financial life online. Your centenary bank account will be a one-stop-shop 
+        for spending, saving, budgeting, investing, and much more.</p>
+
+          <a href="#"><button type="button" class="hero__btn">personal banking</button></a>
+        </div>
+
+    </div>
+  </div>
+</section>
+<section class="feature ">
+  <div class="content container container--pall">
+    <div class="feature__text">
+      <h2>Why choose Centenary bank?</h2>
+      <p>  We leverage Open Banking to turn your bank account into your financial hub. Control 
+        your finances like never before.</p>
+    </div>
+    <div class="feature__grid">
+        <div class="feature__items">
+         <div class="feature__icon">
+          <img src="images/icon-online.svg">
+         </div>
+         <div class="feature__tittle">
+         <h3> Online Banking</h3>
+         </div>
+         <div class="feature__description">
+          <p>  Our modern web and mobile applications allow you to keep track of your finances 
+            wherever you are in the world.</p>
+          </div>
+        </div>
+        <div class="feature__items">
+         <div class="feature__icon">
+          <img src="images/icon-budgeting.svg">
+         </div>
+         <div class="feature__tittle">
+         <h3>Simple Budgeting</h3>
+         </div>
+         <div class="feature__description">
+          <p>  Our modern web and mobile applications allow you to keep track of your finances 
+            wherever you are in the world.</p>
+          </div>
+        </div>
+        <div class="feature__items">
+         <div class="feature__icon">
+          <img src="images/icon-online.svg">
+         </div>
+         <div class="feature__tittle">
+         <h3>Fast Onboarding</h3>
+         </div>
+         <div class="feature__description">
+          <p>We don’t do branches. Open your account in minutes online and start taking control 
+            of your finances right away.</p>
+          </div>
+        </div>
+        <div class="feature__items">
+         <div class="feature__icon">
+          <img src="images/icon-onboarding.svg">
+         </div>
+         <div class="feature__tittle">
+         <h3>Open API</h3>
+         </div>
+         <div class="feature__description">
+          <p>  Manage your savings, investments, pension, and much more from one account. Tracking 
+            your money has never been easier.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<section class="article">
+  <div class="content container container--pall">
+    <h2 id="section-articles">Latest Articles</h2>
+    <div class="article__grid">
+       <div class="article__items">
+        <a href="#">
+            <div class="article__img" style="background-image: url(images/image-currency.jpg);"></div>
+            <div class="article__text">
+              <div class="article__author">
+                By Claire Robinson 
+              </div>
+              <div class="article__tittle">
+                Receive money in any currency with no fees
+              </div>
+              <div class="article__description">
+                The world is getting smaller and we’re becoming more mobile. So why should you be 
+                forced to only receive money in a single …
+              </div>
+        
+            </div>
+          </a>
+      </div>
+     
+       <div class="article__items">
+        <a href="#">
+          <div class="article__img" style="background-image: url(images/image-restaurant.jpg);"></div>
+          <div class="article__text">
+          <div class="article__author">
+          By Wilson Hutton
+         </div>
+          <div class="article__tittle">
+            Treat yourself without worrying about money
+          </div>
+          <div class="article__description">
+            Our simple budgeting feature allows you to separate out your spending and set 
+              realistic limits each month. That means you …
+          </div>
+         </div>
+        </a>
+      </div>
+
+     
+       <div class="article__items">
+        <a href="#">
+          <div class="article__img" style="background-image: url(images/bank_pins.PNG);"></div>
+          <div class="article__text">
+         <div class="article__author">
+          By Claire Muhindo
+         </div>
+          <div class="article__tittle">
+            Take your CENTENARY bank card wherever you go
+          </div>
+          <div class="article__description">
+            We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+              while you’re abroad. We’ll even show you …
+          </div>
+          </div>
+        </a>
+      </div>
+    
+     
+       <div class="article__items">
+        <a href="">
+          <div class="article__img" style="background-image: url(images2/article4.jpeg);"></div>
+          <div class="article__text">
+         <div class="article__author">
+            By Kasenene Robert
+         </div>
+          <div class="article__tittle">
+            Our invite-only Beta accounts are now live!
+          </div>
+          <div class="article__description">
+            After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+            It’s easy to request an invite through the site ...
+          </div>
+          </div>
+        </a>
+      </div>
+    
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <footer------------------------------------------------------- -->
+
+        
+<footer class="footer">
+  <div class="footer__content container">
+    <a href="#">
+      <img class="footer__logo" src="images2/logo.jpeg" width="230px" height="150px">
+    </a>
+  
+    <div class="footer__social">
+      <a href="#"><img src="images/icon-facebook.svg"></a>
+      <a href="#"><img src="images/icon-youtube.svg"></a>
+      <a href="#"><img src="images/icon-twitter.svg"></a>
+      <a href="#"><img src="images/icon-pinterest.svg"></a>
+      <a href="#"><img src="images/icon-instagram.svg"></a>
+    </div>
+  
+    <div class="footer__links col1">
+ 
+      <a href="index.html">Home</a>
+      <a href="about us.html">About us</a>
+      <a href="contact.html">Contact us</a>
+     
+      <a href="potifolio.html">Potifolio</a>
+    </div>
+  
+    <div class="footer__links col2">
+      <a href="career.html">Careers</a>
+      <a href="contact.html">Support</a>
+      <a href="https://www.centenarybank.co.ug/privacy-policy">Privacy Policy</a>
+     </div>
+    
+     <div class="footer__cta">
+      <a href="#"><button class="button">Request Invite</button></a>
+     </div>
+      <div class="footer__copyright">
+       &copy; CENTENARY bank. All Rights Reserved.
+      </div>
+     
+   </div>
+   </footer>
+<script src="/APP/JS/script.js"></script>
+</body>
+</html>

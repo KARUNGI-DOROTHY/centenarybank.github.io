@@ -1,0 +1,135 @@
+.footer {
+  background: hsl(233, 87%, 47%);
+  color: hsl(0, 0%, 100%);
+  padding: 40px;
+  text-align: center;
+}
+.footer a {
+  color: hsl(0, 0%, 100%);
+}
+@media (min-width: 1024px) {
+  .footer__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 3fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+    justify-items: start;
+    gap: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.footer__logo {
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .footer__logo {
+    grid-area: logo;
+    margin-bottom: 0;
+  }
+}
+.footer__social {
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .footer__social {
+    grid-area: social;
+    margin-bottom: 0;
+    align-self: end;
+  }
+}
+.footer__social a {
+  cursor: pointer;
+}
+.footer__social a img {
+  height: 15px;
+  opacity: 0.99;
+  transition: all 150ms ease-in-out;
+}
+.footer__social a img:hover {
+  transform: scale(1.95);
+}
+.footer__social a:not(:last-child) {
+  margin-right: 16px;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2.25;
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .footer__links {
+    align-items: start;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__links.col1 {
+    grid-area: links1;
+  }
+}
+.footer__links.col1 a {
+  opacity: 0.99;
+  transition: all 150ms ease-in-out;
+}
+.footer__links.col1 a:hover {
+  color: hsl(136, 93%, 48%);
+}
+.footer__links.col2 {
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .footer__links.col2 {
+    grid-area: links2;
+    margin-bottom: 0;
+  }
+}
+.footer__links.col2 a {
+  opacity: 0.99;
+  transition: all 150ms ease-in-out;
+}
+.footer__links.col2 a:hover {
+  color: hsl(136, 65%, 51%);
+}
+@media (min-width: 1024px) {
+  .footer__cta {
+    grid-area: cta;
+    justify-self: end;
+    text-align: right;
+  }
+}
+.footer__cta a .button {
+  position: relative;
+  padding: 14px 35px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  opacity: 0.99;
+  background: linear-gradient(to right, hsl(120, 4%, 5%), hsl(180, 5%, 8%));
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  transition: opacity 300ms ease-in-out;
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .footer__cta a .button {
+    margin-bottom: 0;
+  }
+}
+.footer__cta a .button:hover {
+  opacity: 0.7;
+  background: linear-gradient(to left, hsl(357, 65%, 51%), hsl(355, 70%, 51%));
+}
+.footer__copyright {
+  font-size: 13px;
+  color: hsl(233, 8%, 62%);
+}
+@media (min-width: 1024px) {
+  .footer__copyright {
+    grid-area: copyright;
+    align-self: end;
+    justify-self: end;
+  }
+}
